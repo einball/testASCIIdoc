@@ -62,7 +62,7 @@ jobs:
       - name: Gem things
         run: echo "gem 'asciidoctor-pdf'" >> Gemfile
 
-- name: Gem things
+      - name: Gem things
         run: echo "gem 'prawn'" >> Gemfile
 
       - name: Exec bundler
