@@ -84,5 +84,5 @@ jobs:
       - name: Exec bundler
         run: bundle
 
-      - name: Run asciidoctor version command
-        run: asciidoctor --version
+      - name: Run asciidoctor
+        run: asciidoctor *
