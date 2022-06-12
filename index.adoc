@@ -12,13 +12,10 @@
 :toc: left
 :url-wolpertinger: https://en.wikipedia.org/wiki/Wolpertinger
 
+[.lead]
 Test output
 
-<<<
-// ####################################################################################################################
-toc::[]
-
-
+dings
 
 Don't worry about gumberoos or splintercats.
 Something far more fearsome plagues the days, nights, and inbetweens.
