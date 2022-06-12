@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install asciidoctor
-        uses: ./.github/workflows/install-asciidoctor.yml@main
+        uses: ./.github/workflows/install-asciidoctor.yml
 
       - name: Run asciidoctor
         run: asciidoctor -r asciidoctor-diagram -D build INDEX.adoc
