@@ -10,8 +10,10 @@ Kismet R. Lee <kismet@asciidoctor.org>
 :imagesdir: images/
 
 Logo
-######################
 <<<
+// 
+######################
+
 toc::[]
 
 :url-wolpertinger: https://en.wikipedia.org/wiki/Wolpertinger
