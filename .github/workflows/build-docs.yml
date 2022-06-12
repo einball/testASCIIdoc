@@ -55,10 +55,13 @@ jobs:
         run: smcat --help
         
       - name: Install asciidoctor-diagram
-        run: gem install asciidoctor-diagram
+        run: gem install asciidoctor-diagram asciidoctor-pdf
         
       - name: Gem things
-        run: echo "gem 'asciidoctor-diagram'" > Gemfile
+        run: echo "gem 'asciidoctor-diagram'" >> Gemfile
+
+      - name: Gem things
+        run: echo "gem 'asciidoctor-diagram'" >> Gemfile
 
       - name: Exec bundler
         run: bundle
@@ -67,7 +70,7 @@ jobs:
         run: asciidoctor -r asciidoctor-diagram -D build ./*.adoc
 
       - name: Run asciidoctor HTML
-        run: asciidoctor -r asciidoctor-diagram -r asciidoctor-pdf -D build ./*.adoc
+        run: asciidoctor -r asciidoctor-diagram -r asciidoctor-pdf -b pdf -D build ./*.adoc
 
       - name: Display ls
         run: ls -la
