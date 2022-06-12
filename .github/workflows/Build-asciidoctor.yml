@@ -17,7 +17,8 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
-    name: Builds stuff
+    name: Build HTML Documentation
+    
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -69,10 +70,19 @@ jobs:
 #          cache-dependency-path: # optional
 
       - name: Install State Machine Cat
-        run: npm install --global state-machine-cat
+        run: npm install --location=global state-machine-cat
         
-      - name: Execute smcat
+      - name: Verify smcat is working
         run: smcat --help
+        
+      - name: Install asciidoctor-diagram
+        run: gem install asciidoctor-diagram
+        
+      - name: Gem things
+        run: gem 'asciidoctor-diagram'
+
+      - name: Exec bundler
+        run: bundle
 
       - name: Run asciidoctor version command
         run: asciidoctor --version
