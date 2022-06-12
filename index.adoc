@@ -9,6 +9,8 @@ Kismet R. Lee <kismet@asciidoctor.org>
 :url-repo: https://my-git-repo.com 
 :imagesdir: images/
 
+toc::[]
+
 :url-wolpertinger: https://en.wikipedia.org/wiki/Wolpertinger
 
 Don't worry about gumberoos or splintercats.
@@ -39,5 +41,8 @@ initial            => "media player off";
 "media player on"  => "media player off" : power;
 ....
 
+== Test
+
+=== Test2 
 
 Test
