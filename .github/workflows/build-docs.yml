@@ -72,17 +72,17 @@ jobs:
         run: asciidoctor -r asciidoctor-diagram -D build ./index.adoc
 
       - name: Run asciidoctor PDF
-        run: asciidoctor-pdf -a pdf-theme=pdf-theme.yml -r asciidoctor-diagram -D build ./index.adoc
+        run: asciidoctor-pdf -a pdf-theme=pdf-theme.yml -r asciidoctor-diagram ./index.adoc
         continue-on-error: false
 
       - name: Display ls
         run: ls -la
         
-      - name: Upload output artifacts
+      - name: Upload PDF
         uses: actions/upload-artifact@v3
         with:
-          name: output
-          path: build/
+          name: output-pdf.pdf
+          path: output-pdf.pdf
        
       - name: Deploy to Github Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
