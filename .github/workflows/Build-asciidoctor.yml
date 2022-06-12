@@ -85,7 +85,7 @@ jobs:
         run: bundle; ls -la
 
       - name: Run asciidoctor
-        run: asciidoctor INDEX.adoc
+        run: asciidoctor -r asciidoctor-diagram INDEX.adoc
         
       - name: Run ls
         run: ls -la
