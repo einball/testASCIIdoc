@@ -82,7 +82,7 @@ jobs:
         run: echo "gem 'asciidoctor-diagram'" > Gemfile
 
       - name: Exec bundler
-        run: bundle
+        run: bundle; ls -la
 
       - name: Run asciidoctor
-        run: asciidoctor *
+        run: asciidoctor INDEX.adoc
