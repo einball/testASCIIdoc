@@ -9,6 +9,8 @@ Kismet R. Lee <kismet@asciidoctor.org>
 :url-repo: https://my-git-repo.com 
 :imagesdir: images/
 
+Logo
+<<<
 toc::[]
 
 :url-wolpertinger: https://en.wikipedia.org/wiki/Wolpertinger
