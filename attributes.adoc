@@ -1,0 +1,11 @@
+:keywords: test
+:description: This is a test
+:revnumber: v1.0.0
+:doctype: book
+:sectnums:
+:stem:
+:reproducible:
+:listing-caption: Listing
+:toclevels: 4
+:imagesdir: images/
+:toc: left
