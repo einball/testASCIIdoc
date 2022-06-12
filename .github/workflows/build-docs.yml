@@ -61,7 +61,7 @@ jobs:
         run: echo "gem 'asciidoctor-diagram'" >> Gemfile
 
       - name: Gem things
-        run: echo "gem 'asciidoctor-diagram'" >> Gemfile
+        run: echo "gem 'asciidoctor-pdf'" >> Gemfile
 
       - name: Exec bundler
         run: bundle
