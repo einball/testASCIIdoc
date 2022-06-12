@@ -1,0 +1,51 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "master" branch
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  - build:
+    name: Build HTML Documentation
+    
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Checkout stuff
+        uses: actions/checkout@v3
+
+      - name: Install asciidoctor
+        uses: ./.github/workflows/install-asciidoctor.yml@main
+
+      - name: Run asciidoctor
+        run: asciidoctor -r asciidoctor-diagram -D build INDEX.adoc
+        
+      - name: Run ls
+        run: ls -la
+        
+      - uses: actions/upload-artifact@v3
+        with:
+          name: output
+          path: build/
+          
+  - deploy:
+      - name: Deploy to Github Pages 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: build # The folder the action should deploy.
