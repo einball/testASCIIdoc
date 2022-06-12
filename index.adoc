@@ -9,7 +9,10 @@
 :listing-caption: Listing
 :toclevels: 4
 :imagesdir: images/
-:toc: macro
+:toc: left
+
+Test output
+
 <<<
 // ####################################################################################################################
 toc::[]
