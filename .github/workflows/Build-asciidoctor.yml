@@ -23,10 +23,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Checkout stuff
-      - uses: actions/checkout@v3
+      name: Checkout stuff
+        uses: actions/checkout@v3
 
-      - name: Asciidoctor Setup
+      name: Asciidoctor Setup
         # You may pin to the exact commit or the version.
         # uses: reitzig/actions-asciidoctor@7570212ae20b63653481675fb1ff62d1073632b0
         uses: reitzig/actions-asciidoctor@v2.0.0
