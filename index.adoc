@@ -1,4 +1,5 @@
 = Document Title: Document Subtitle
+include::attributes.adoc
 
 :url-wolpertinger: https://en.wikipedia.org/wiki/Wolpertinger
 
