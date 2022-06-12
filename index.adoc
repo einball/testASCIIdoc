@@ -1,17 +1,15 @@
 = The Dangers of Wolpertingers
-Kismet R. Lee <kismet@asciidoctor.org> 
-:description: The document's description. 
-:sectanchors: 
+:keywords: test
+:description: This is a test
+:revnumber: v1.0.0
 :doctype: book
 :sectnums:
 :stem:
 :reproducible:
 :listing-caption: Listing
 :toclevels: 4
-:toc: macro
-:url-repo: https://my-git-repo.com 
 :imagesdir: images/
-
+:toc: macro
 <<<
 // ####################################################################################################################
 toc::[]
