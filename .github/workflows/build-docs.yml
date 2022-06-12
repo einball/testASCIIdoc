@@ -63,9 +63,12 @@ jobs:
       - name: Exec bundler
         run: bundle
 
-      - name: Run asciidoctor
+      - name: Run asciidoctor HTML
         run: asciidoctor -r asciidoctor-diagram -D build ./*.adoc
-        
+
+      - name: Run asciidoctor HTML
+        run: asciidoctor -r asciidoctor-diagram -r asciidoctor-pdf -D build ./*.adoc
+
       - name: Display ls
         run: ls -la
         
