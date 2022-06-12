@@ -23,7 +23,7 @@ Vivamus viverra ligula ac risus ullamcorper, eget vestibulum nunc rhoncus. Cras 
 Wolpertingers are {url-wolpertinger}[ravenous beasts].
 
 .A mountain sunset
-[smcat,target="state_diagram",align=center]
+[smcat,target="state_diagram",align=center,noborder]
 ....
 initial,
 "media player off",
