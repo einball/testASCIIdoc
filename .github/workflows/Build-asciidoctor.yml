@@ -79,7 +79,7 @@ jobs:
         run: gem install asciidoctor-diagram
         
       - name: Gem things
-        run: gem 'asciidoctor-diagram'
+        run: echo "gem 'asciidoctor-diagram'" > Gemfile
 
       - name: Exec bundler
         run: bundle
