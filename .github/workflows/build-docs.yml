@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  - build:
+  build:
     name: Build HTML Documentation
     
     # The type of runner that the job will run on
@@ -43,9 +43,8 @@ jobs:
           name: output
           path: build/
           
-  - deploy:
       - name: Deploy to Github Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: build # The folder the action should deploy.
+            branch: gh-pages # The branch the action should deploy to.
+            folder: build # The folder the action should deploy.
