@@ -86,3 +86,11 @@ jobs:
 
       - name: Run asciidoctor
         run: asciidoctor INDEX.adoc
+        
+      - name: Run ls
+        run: ls -la
+        
+      - uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact
+          path: INDEX.html
