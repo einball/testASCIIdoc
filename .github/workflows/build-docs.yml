@@ -73,7 +73,7 @@ jobs:
 
       - name: Run asciidoctor PDF
         run: asciidoctor-pdf -r asciidoctor-diagram -D build ./*.adoc
-        continue-on-error: true
+        continue-on-error: false
 
       - name: Display ls
         run: ls -la
