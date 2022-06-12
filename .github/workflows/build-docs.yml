@@ -69,7 +69,7 @@ jobs:
       - name: Run asciidoctor HTML
         run: asciidoctor -r asciidoctor-diagram -D build ./*.adoc
 
-      - name: Run asciidoctor HTML
+      - name: Run asciidoctor PDF
         run: asciidoctor -r asciidoctor-diagram -r asciidoctor-pdf -b pdf -D build ./*.adoc
 
       - name: Display ls
