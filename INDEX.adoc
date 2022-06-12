@@ -1,3 +1,4 @@
+
 = The Dangers of Wolpertingers
 :url-wolpertinger: https://en.wikipedia.org/wiki/Wolpertinger
 
@@ -9,7 +10,28 @@ Wolpertingers.
 
 Wolpertingers are {url-wolpertinger}[ravenous beasts].
 
-[smcat]
+[smcat,format=png]
+....
+initial,
+"media player off",
+
+"media player on" {
+  stopped, playing, paused;
+
+  stopped => playing : play;
+  playing => stopped : stop;
+  playing => paused  : pause;
+  paused  => playing : pause;
+  paused  => stopped : stop;
+};
+
+initial            => "media player off";
+"media player off" => stopped           : power;
+"media player on"  => "media player off" : power;
+....
+
+
+[smcat,format=png]
 ----
 initial,
 "media player off",
@@ -28,3 +50,6 @@ initial            => "media player off";
 "media player off" => stopped           : power;
 "media player on"  => "media player off" : power;
 ----
+
+
+Test
