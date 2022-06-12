@@ -9,22 +9,22 @@ Wolpertingers.
 
 Wolpertingers are {url-wolpertinger}[ravenous beasts].
 
-[ditaa]
-....
-                   +-------------+
-                   | Asciidoctor |-------+
-                   |   diagram   |       |
-                   +-------------+       | PNG out
-                       ^                 |
-                       | ditaa in        |
-                       |                 v
- +--------+   +--------+----+    /---------------\
- |        | --+ Asciidoctor +--> |               |
- |  Text  |   +-------------+    |   Beautiful   |
- |Document|   |   !magic!   |    |    Output     |
- |     {d}|   |             |    |               |
- +---+----+   +-------------+    \---------------/
-     :                                   ^
-     |          Lots of work             |
-     +-----------------------------------+
-....
+[smcat]
+----
+initial,
+"media player off",
+
+"media player on" {
+  stopped, playing, paused;
+
+  stopped => playing : play;
+  playing => stopped : stop;
+  playing => paused  : pause;
+  paused  => playing : pause;
+  paused  => stopped : stop;
+};
+
+initial            => "media player off";
+"media player off" => stopped           : power;
+"media player on"  => "media player off" : power;
+----
