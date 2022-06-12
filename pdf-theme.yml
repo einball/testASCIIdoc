@@ -5,6 +5,7 @@ link:
   font-color: #edac00
 image:
   align: center
+  border-width: 0px
 caption:
   align: center
 running-content:
