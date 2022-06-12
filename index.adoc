@@ -1,6 +1,10 @@
+= The Dangers of Wolpertingers
+Kismet R. Lee <kismet@asciidoctor.org> 
+:description: The document's description. 
+:sectanchors: 
+:url-repo: https://my-git-repo.com 
 :imagesdir: images/
 
-= The Dangers of Wolpertingers
 :url-wolpertinger: https://en.wikipedia.org/wiki/Wolpertinger
 
 Don't worry about gumberoos or splintercats.
