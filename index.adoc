@@ -2,6 +2,8 @@
 Kismet R. Lee <kismet@asciidoctor.org> 
 :description: The document's description. 
 :sectanchors: 
+:doctype: book
+:toc:
 :url-repo: https://my-git-repo.com 
 :imagesdir: images/
 
