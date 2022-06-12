@@ -82,7 +82,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: output-pdf.pdf
-          path: output-pdf.pdf
+          path: index.pdf
        
       - name: Deploy to Github Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
