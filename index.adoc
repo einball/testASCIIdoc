@@ -21,9 +21,9 @@ Vivamus viverra ligula ac risus ullamcorper, eget vestibulum nunc rhoncus. Cras 
 == Origins
 
 Wolpertingers are {url-wolpertinger}[ravenous beasts].
-[#img-state-diagram]
-.A mountain sunset
-[smcat,target="state_diagram",align=center]
+
+
+[smcat,target="state_diagram",align=center,"Mesa Verde Sunset, by JAVH"]
 ....
 initial,
 "media player off",
