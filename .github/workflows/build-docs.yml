@@ -69,10 +69,10 @@ jobs:
         run: bundle
 
       - name: Run asciidoctor HTML
-        run: asciidoctor -r asciidoctor-diagram -D build ./*.adoc
+        run: asciidoctor -r asciidoctor-diagram -D build ./index.adoc
 
       - name: Run asciidoctor PDF
-        run: asciidoctor-pdf -r asciidoctor-diagram -D build ./*.adoc
+        run: asciidoctor-pdf -r asciidoctor-diagram -D build ./index.adoc
         continue-on-error: false
 
       - name: Display ls
