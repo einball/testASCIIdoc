@@ -4,7 +4,6 @@ Kismet R. Lee <kismet@asciidoctor.org>
 :sectanchors: 
 :url-repo: https://my-git-repo.com 
 :imagesdir: images/
-:imagesoutdir: images/
 
 :url-wolpertinger: https://en.wikipedia.org/wiki/Wolpertinger
 
