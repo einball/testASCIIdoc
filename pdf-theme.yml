@@ -43,6 +43,6 @@ footer:
     left:
       content: '{docdate}'
     center:
-      content: 'NEORV32 Version: {revnumber}'
+      content: 'Version: {revnumber}'
     right:
       content: '{page-number} / {page-count}'
