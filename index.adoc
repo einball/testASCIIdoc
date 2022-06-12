@@ -22,7 +22,6 @@ Vivamus viverra ligula ac risus ullamcorper, eget vestibulum nunc rhoncus. Cras 
 
 Wolpertingers are {url-wolpertinger}[ravenous beasts].
 
-.Mesa Verde Sunset, by JAVH
 [smcat,target="state_diagram"]
 ....
 initial,
@@ -42,6 +41,7 @@ initial            => "media player off";
 "media player off" => stopped           : power;
 "media player on"  => "media player off" : power;
 ....
+.Mesa Verde Sunset, by JAVH
 
 == Test
 
