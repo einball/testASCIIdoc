@@ -64,7 +64,7 @@ jobs:
         run: bundle
 
       - name: Run asciidoctor
-        run: asciidoctor -r asciidoctor-diagram -D build INDEX.adoc
+        run: asciidoctor -r asciidoctor-diagram -D build ./*.adoc
         
       - name: Display ls
         run: ls -la
