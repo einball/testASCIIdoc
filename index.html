@@ -485,11 +485,26 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis luctus ullamcorper
 <div class="paragraph">
 <p>Wolpertingers are <a href="https://en.wikipedia.org/wiki/Wolpertinger">ravenous beasts</a>.</p>
 </div>
-<div class="imageblock text-center">
+<div class="literalblock text-center noborder][smcat">
+<div class="title">A mountain sunset</div>
 <div class="content">
-<img src="images/state_diagram.svg" alt="state diagram" width="268" height="485">
+<pre>initial,
+"media player off",
+
+"media player on" {
+  stopped, playing, paused;
+
+  stopped =&gt; playing : play;
+  playing =&gt; stopped : stop;
+  playing =&gt; paused  : pause;
+  paused  =&gt; playing : pause;
+  paused  =&gt; stopped : stop;
+};
+
+initial            =&gt; "media player off";
+"media player off" =&gt; stopped           : power;
+"media player on"  =&gt; "media player off" : power;</pre>
 </div>
-<div class="title">Figure 1. A mountain sunset</div>
 </div>
 </div>
 </div>
