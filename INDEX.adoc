@@ -10,7 +10,7 @@ Wolpertingers.
 
 Wolpertingers are {url-wolpertinger}[ravenous beasts].
 
-[smcat,format=png]
+[smcat]
 ....
 initial,
 "media player off",
@@ -31,7 +31,7 @@ initial            => "media player off";
 ....
 
 
-[smcat,format=png]
+[smcat]
 ----
 initial,
 "media player off",
