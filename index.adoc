@@ -10,6 +10,7 @@
 :toclevels: 4
 :imagesdir: images/
 :toc: left
+:url-wolpertinger: https://en.wikipedia.org/wiki/Wolpertinger
 
 Test output
 
@@ -17,7 +18,7 @@ Test output
 // ####################################################################################################################
 toc::[]
 
-:url-wolpertinger: https://en.wikipedia.org/wiki/Wolpertinger
+
 
 Don't worry about gumberoos or splintercats.
 Something far more fearsome plagues the days, nights, and inbetweens.
