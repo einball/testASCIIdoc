@@ -5,6 +5,9 @@ Kismet R. Lee <kismet@asciidoctor.org>
 :doctype: book
 :sectnums:
 :stem:
+:reproducible:
+:listing-caption: Listing
+:toclevels: 4
 :toc: macro
 :url-repo: https://my-git-repo.com 
 :imagesdir: images/
