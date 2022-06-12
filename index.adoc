@@ -16,7 +16,7 @@ Wolpertingers.
 
 Wolpertingers are {url-wolpertinger}[ravenous beasts].
 
-[smcat]
+[smcat,target="state_diagram"]
 ....
 initial,
 "media player off",
